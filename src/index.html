@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Act8 - Formularis</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registerForm" novalidate>
+            <h1>Registre</h1>
+            <label>Nom: </label>
+            <input type="text" name="firstname" id="firstname">
+    
+            <label>Cognom: </label>
+            <input type="text" name="lastName" id="lastName">
+    
+            <label>Correu Electrònic: </label>
+            <input type="email" name="correu" id="correu">
+    
+            <label>Contrasenya: </label>
+            <input type="password" name="pass" id="pass">
+    
+            <label>DNI: </label>
+            <input type="text" name="dni" id="dni">
+    
+            <label>Data de naixement: </label>
+            <input type="date" name="data" id="data">
+    
+            <label>Gènere: </label>
+            <select name="genere" name="genere" id="genere">
+                <option value="" selected disabled hidden>Selecciona aquí</option>
+                <option value="home">Home</option>
+                <option value="dona">Dona</option>
+                <option value="altre">Prefereixo no dir-ho</option>
+            </select>
+
+            <label>Acceptar Termes i Condicions</label>
+            <input type="checkbox" name="acceptarTermes" id="acceptarTermes">
+
+            <button type="submit">Envia</button>
+        </form>
+    </div> 
+    <script src="index.js"></script>
+</body>
+</html>
